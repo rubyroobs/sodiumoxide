@@ -20,7 +20,7 @@ members = ["libsodium-sys", "testcrate"]
 [dependencies]
 ed25519 = { version = "1", default-features = false }
 libc = { version = "^0.2.41" , default-features = false }
-libsodium-sys = { version = "0.2.7", path = "libsodium-sys" }
+libsodium-sys = { git = 'https://github.com/jedisct1/libsodium-sys-stable', package='libsodium-sys-stable' }
 serde = { version = "^1.0.59", default-features = false, optional = true }
 
 [dev-dependencies]
